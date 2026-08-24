@@ -1,2 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.clientsRouter = void 0;
+const express_1 = require("express");
+const common_1 = require("@menorahgroupmep/common");
+const auth_1 = require("@menorahgroupmep/auth");
+const clients_controller_1 = require("../controller/clients.controller");
+const clientsRouter = (0, express_1.Router)();
+exports.clientsRouter = clientsRouter;
+clientsRouter.get("/getServiceHealth", clients_controller_1.clientsController.getServiceHealth);
+clientsRouter.get("/getClientsList", auth_1.secureService.verifyRole(common_1.Role.Administrator, common_1.Role.Manager, common_1.Role.Operator, common_1.Role.Viewer), clients_controller_1.clientsController.getClientsList);
+clientsRouter.get("/getSingleClient/:id", auth_1.secureService.verifyRole(common_1.Role.Administrator, common_1.Role.Manager, common_1.Role.Operator, common_1.Role.Viewer), clients_controller_1.clientsController.getSingleClient);

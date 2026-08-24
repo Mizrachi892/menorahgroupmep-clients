@@ -1,1 +1,1 @@
-export {};
+export declare function initDB(): Promise<void>;
