@@ -18,7 +18,6 @@ class ClientsController {
         response.status(StatusCode.OK).json(health);
     }
 
-
     public async getClientsList(request: Request, response: Response): Promise<void> {
         const clients = await clientsManager.getClientsList();
         response.status(StatusCode.OK).json(clients);
@@ -30,6 +29,7 @@ class ClientsController {
         const client = await clientsManager.getSingleClient(id);
         response.status(StatusCode.OK).json(client);
     }
+
 }
 
 export const clientsController = new ClientsController();

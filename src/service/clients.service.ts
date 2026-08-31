@@ -1,5 +1,5 @@
-import { clientsDao } from "../dao/clients.dao";
-import { ResourceNotFound } from "@menorahgroupmep/common";
+import {clientsDao} from "../dao/clients.dao";
+import {ResourceNotFound} from "@menorahgroupmep/common";
 
 class ClientsService {
 

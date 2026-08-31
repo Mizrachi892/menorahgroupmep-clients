@@ -1,4 +1,4 @@
-import { clientsService } from "../service/clients.service";
+import {clientsService} from "../service/clients.service";
 
 class ClientsManager {
 
