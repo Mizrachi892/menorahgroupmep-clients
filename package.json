@@ -22,7 +22,7 @@
     "mysql2": "^3.15.3",
     "sequelize": "^6.37.8",
     "socket.io": "^4.8.3",
-    "@menorahgroupmep/contracts": "git+ssh://git@github.com/Mizrachi892/menorahgroupmep-contracts.git#v1.0.2"
+    "@menorahgroupmep/contracts": "git+ssh://git@github.com/Mizrachi892/menorahgroupmep-contracts.git#v1.0.4"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
