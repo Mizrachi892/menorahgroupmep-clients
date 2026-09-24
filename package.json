@@ -23,7 +23,7 @@
     "sequelize": "^6.37.8",
     "socket.io": "^4.8.3",
     "@menorahgroupmep/contracts": "git+ssh://git@github.com/Mizrachi892/menorahgroupmep-contracts.git#v1.0.4",
-    "@menorahgroupmep/routes": "workspace:*"
+    "@menorahgroupmep/routes": "git+ssh://git@github.com/Mizrachi892/menorahgroupmep-routes.git#v1.0.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
