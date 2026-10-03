@@ -2,11 +2,11 @@
   "name": "@menorahgroupmep/clients",
   "version": "1.0.0",
   "description": "Clients Microservice",
-  "main": "build/index.js",
-  "types": "build/index.d.ts",
+  "main": "build/bootstrap.js",
+  "types": "build/bootstrap.d.ts",
   "scripts": {
     "build": "tsc",
-    "start": "nodemon --exec ts-node src/app.ts --quiet",
+    "start": "nodemon --exec ts-node src/bootstrap.ts --quiet",
     "clean": "rimraf build"
   },
   "dependencies": {
